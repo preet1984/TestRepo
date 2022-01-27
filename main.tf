@@ -1,4 +1,4 @@
-terraform {
+iterraform {
   required_version = ">=1.0.0"
   required_providers {
     aws = {
@@ -10,8 +10,6 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
-  access_key = "AKIA6OLTE73DVN4P5TNG"
-  secret_key = "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"
   endpoints {
   sts = "https://sts.ap-south-1.amazonaws.com"
             }
