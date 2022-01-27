@@ -1,4 +1,4 @@
-iterraform {
+terraform {
   required_version = ">=1.0.0"
   required_providers {
     aws = {
@@ -10,13 +10,6 @@ iterraform {
 
 provider "aws" {
   region = var.aws_region
-  endpoints {
-  sts = "https://sts.ap-south-1.amazonaws.com"
-            }
-  assume_role {
-  role_arn = "arn:aws:iam::992915816135:instance-profile/my-ec2-terraform-role"
-  session_name = "terraform_session_name"
-              }
        }
 
 resource "aws_security_group" "my_security_group" {
